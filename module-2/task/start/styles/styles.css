@@ -5,11 +5,20 @@ a{
 
 
 header{
-    border:1px solid blue;
-    position:relative;
-    top:0px;
-    left:0px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:90%;
+    margin:0 auto;
+    padding:10px;
+    border:1px solid red;
 }
 
+ol{
+    border:1px solid red;
+    display:flex;
+    justify-content: space-evenly;
+    width:380px;
+}
 
 
