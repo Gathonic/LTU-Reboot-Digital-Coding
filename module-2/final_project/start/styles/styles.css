@@ -1,0 +1,45 @@
+.container{
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+}
+
+header {
+    width:90%;
+    margin:20px auto;
+    padding:10px;
+}
+
+button{
+    background-color:#f1f1f1;
+    font-size: 16px;
+    height:46px;
+    padding: 15px 24px;
+    border: none;
+    margin: 8px 0;
+}
+
+button.hove{
+    background-color: a4a4a4;
+    box-shadow:0 19px 38px rgba(0,0,0,3), 0 15px 12px rgba(0,0,0,22)
+}
+
+main{
+    width:90%;
+    margin:10px auto; 
+    display:flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+    padding: 20px;
+}
+main.image{
+    width:250px
+}
+
+main .image img{
+    width:100%;
+}
+
+
+
+
