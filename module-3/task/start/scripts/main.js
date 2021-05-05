@@ -16,4 +16,34 @@ let discountAmount = 0.20; //number - float
 //console.log(productName, price);
 
 
+function showProductName() {
+    console.log(productName);
+}
 
+//showProductName();
+
+function totalPrice(productPrice, productQuantity) {
+console.log (productPrice*productQuantity);
+}
+
+//totalPrice(price, quantity);
+
+//function checkAvailability= (productInstock) {
+    //console.log(productInstock);
+//}
+
+let checkAvailabilty = productInStock  => console.log(productInStock);
+
+
+//checkAvailabilty(inStock);
+
+function productDiscount() {
+    if (quantity > 1) {
+       let newPrice = (price - discountAmount * quantity);
+        console.log(newPrice);
+    } else {
+        console.log(price * quantity);
+    } 
+}
+
+productDiscount();
