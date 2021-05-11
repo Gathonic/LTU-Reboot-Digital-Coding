@@ -212,4 +212,77 @@ function multipleBy(num) {
     } 
 }
 
-multipleBy(10);
+//multipleBy(10);
+/*
+arr - shoppingCart
+
+for
+counter = 0 (always starts at 0)
+counter <arr.length
+counter++
+
+arr[counter].price * arr[counter].quantity
+
+
+*/
+//function totalPriceOfShopping(arr){
+   //console.log(arr[17]);//selecting one line
+   // console.log(arr[8].price * arr[8].quantity);// calculating within objects. selling specific objects
+//}
+
+//totalPriceOfShopping(shoppingCart);
+
+function totalPriceOfShopping(arr) {
+
+        let totalPrice =0;
+    
+        for (let counter = 0; counter<arr.length; counter++){
+        
+           totalPrice = totalPrice + arr[counter].price * arr[counter].quantity;
+        }
+    
+        return totalPrice.toFixed(2);// this does not show it on console log, you need to invoke function
+        //return totalPrice.toFixed(2) this rounds up the number to two decimal points 
+    
+}
+console.log(totalPriceOfShopping(shoppingCart));
+
+
+
+
+
+
+function discountToiletries (arr) {
+
+    let totalPrice =0;
+
+    for (let counter = 0; counter<arr.length; counter++){
+
+        if (arr[counter].type === 'toiletries'){
+
+            let discount = (arr[counter].price * 50)/100; //BODMAS brackets over division then multiplication, then addition, then subtraction
+            totalPrice = totalPrice + (arr[counter].price - discount) * arr[counter].quantity;
+
+        } else{
+    totalPrice = totalPrice + arr[counter].price * arr[counter].quantity;
+        }
+    }
+    return totalPrice.toFixed(2);// this does not show it on console log, you need to invoke function
+    //return totalPrice.toFixed(2) this rounds up the number to two decimal points 
+}
+
+console.log (discountToiletries(shoppingCart));
+
+
+function howMany(arr, type) {
+    let itemsOfType = arr.filter(item=>item.type ===type);
+    
+    return itemsOfType.length;
+    }
+    
+    console.log(howMany(shoppingCart, 'toiletries'));
+    
+    let login = false;
+    
+    //Ternary Operator
+    login? console.log('you are login') : ('you are not logged in')
